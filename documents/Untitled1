@@ -1,0 +1,56 @@
+https://github.com/parulpuri2302/javaproject.git
+dev-1.0
+
+Maven: needs to be installed
+
+
+ ansible-playbook cart1008/ansible/site.yaml \
+-e ansible_python_interpreter=/usr/bin/python \
+-e awsaccesskey=AKIAWJONYFTZNW7V554R \
+-e awssecretkey=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 \
+-e vpcid=vpc-03ecb64f337f4c6f1 \
+-e subnetid=subnet-076a6f41b0ac6b0cf \
+-e awsregion=us-east-1 \
+-e versionid=1.0
+
+
+ami-05b975cbef3a5651c
+
+http://ec2-52-90-7-4.compute-1.amazonaws.com:8080/java-tomcat-maven-example/
+
+ ansible-playbook cart1008/ansible/site.yaml \
+-e ansible_python_interpreter=/usr/bin/python \
+-e awsaccesskey=AKIAWJONYFTZNW7V554R \
+-e awssecretkey=lGk2ds6W3EoX5iKZNsQsillnWeM7ioCeIzkBy3am \
+-e vpcid=vpc-03ecb64f337f4c6f1 \
+-e subnetid1=subnet-076a6f41b0ac6b0cf \
+-e subnetid2=subnet-076a6f41b0ac6b0cf \
+-e webappimageid=ami-05b975cbef3a5651c \
+-e awsregion=us-east-1 \
+-e versionid=1.0
+
+curl http://169.254.169.254/latest/meta-data/public-hostname
+
+aws ec2 create-default-vpc
+
+aws ec2 describe-subnets|egrep "(SubnetId|AvailabilityZone)"
+
+http://ec2-54-152-40-240.compute-1.amazonaws.com:8080/job/tomcat-webapp-ci-cd/configure
+
+subnet-0c75a937ff2d765b4
+
+docker inspect webapp
+
+
+docker images list all the images no matter is container is active or not
+docker ps     list only active containers
+
+
+
+Pre Test: https://app.mymapit.in/code4/tiny/Wmby89
+
+Doc URL: https://docs.google.com/document/d/1Mc-Rzpztu9d3D5yCSqI3ssNDnPN49_OXU5PWYtmMTUk/edit?usp=sharing
+
+Materials: https://drive.google.com/drive/folders/1zGjwkaR0nr9iqJcot7XBOyspzCf6VwP3?usp=sharing
+
+https://docs.google.com/document/d/1Mc-Rzpztu9d3D5yCSqI3ssNDnPN49_OXU5PWYtmMTUk/edit
