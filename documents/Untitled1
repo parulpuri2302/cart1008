@@ -54,3 +54,13 @@ Doc URL: https://docs.google.com/document/d/1Mc-Rzpztu9d3D5yCSqI3ssNDnPN49_OXU5P
 Materials: https://drive.google.com/drive/folders/1zGjwkaR0nr9iqJcot7XBOyspzCf6VwP3?usp=sharing
 
 https://docs.google.com/document/d/1Mc-Rzpztu9d3D5yCSqI3ssNDnPN49_OXU5PWYtmMTUk/edit
+
+Docker bind mount vs volume
+
+docker info
+
+
+docker build -t parulpuri2302/mywebtomcatapp:1.0 cart1008/docker/frontend
+
+
+docker run -d --name webapp -p 9000:8080 parulpuri2302/mywebtomcatapp:1.0
