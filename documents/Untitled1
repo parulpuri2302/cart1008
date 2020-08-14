@@ -64,3 +64,13 @@ docker build -t parulpuri2302/mywebtomcatapp:1.0 cart1008/docker/frontend
 
 
 docker run -d --name webapp -p 9000:8080 parulpuri2302/mywebtomcatapp:1.0
+
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=admin -e MYSQL_DATABASE=HMS -d mysql:8.0
+
+
+docker build -t mohanraz81/springapp:1.0 cart/docker/DockerSpringBoot/
+
+
+Post test: https://app.mymapit.in/code4/tiny/lwNSHb
+
+Feeback: https://tcheck.co/2nkkj5
